@@ -1,0 +1,56 @@
+
+name: Assemble Linux Distro
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+
+      - name: Assemble the distro
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -f linux-distro-part-aa
+          test -f linux-distro-part-ab
+
+          cat linux-distro-part-aa linux-distro-part-ab > linux-distro
+
+          echo "Assembled file:"
+          ls -lh linux-distro
+          sha256sum linux-distro
+
+      - name: Checkout szh repository
+        uses: actions/checkout@v4
+        with:
+          repository: KernelGhost-gif/szh
+          token: ${{ secrets.SZH_PUSH_TOKEN }}
+          path: szh
+          persist-credentials: true
+
+      - name: Copy assembled file
+        run: |
+          cp linux-distro szh/linux-distro
+          cd szh
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add linux-distro
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Add assembled Linux distro"
+          git push
