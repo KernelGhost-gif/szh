@@ -1,0 +1,32 @@
+name: Assemble Linux Distro
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Assemble archive
+        run: |
+          set -euo pipefail
+          cat linux-distro-part-aa linux-distro-part-ab > linux-distro
+          ls -lh linux-distro
+          sha256sum linux-distro
+
+      - name: Upload assembled archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: assembled-linux-distro
+          path: linux-distro
+          if-no-files-found: error
+          retention-days: 7
