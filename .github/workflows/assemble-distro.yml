@@ -187,9 +187,9 @@ jobs:
 
             echo "Processing batch $number/$total"
 
-            git add \
-              --pathspec-from-file="$batch" \
-              --pathspec-file-nul
+            git add -f \
+          --pathspec-from-file="$batch" \
+          --pathspec-file-nul
 
             if git diff --cached --quiet; then
               echo "Batch already committed."
