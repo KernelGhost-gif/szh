@@ -1,0 +1,1 @@
+savedcmd_vmlinux := objcopy --set-section-flags .modinfo=noload --set-section-flags '.rel*'=noload --set-section-flags '!.rel*.dyn'=noload --set-section-flags '.rel.*'=noload vmlinux.unstripped vmlinux; objcopy --remove-section=.modinfo --remove-section='.rel*' --remove-section='!.rel*.dyn' --remove-section='.rel.*' -w --strip-unneeded-symbol='__mod_device_table__*' vmlinux
