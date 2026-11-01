@@ -1,0 +1,71 @@
+!<thin>
+//                                              432       `
+sound.o/
+init.o/
+memory.o/
+control.o/
+misc.o/
+device.o/
+info.o/
+isadma.o/
+vmaster.o/
+ctljack.o/
+jack.o/
+hwdep.o/
+timer.o/
+hrtimer.o/
+pcm.o/
+pcm_native.o/
+pcm_lib.o/
+pcm_misc.o/
+pcm_memory.o/
+memalloc.o/
+pcm_timer.o/
+seq_device.o/
+seq/seq.o/
+seq/seq_lock.o/
+seq/seq_clientmgr.o/
+seq/seq_memory.o/
+seq/seq_queue.o/
+seq/seq_fifo.o/
+seq/seq_prioq.o/
+seq/seq_timer.o/
+seq/seq_system.o/
+seq/seq_ports.o/
+seq/seq_info.o/
+seq/seq_dummy.o/
+
+/0              0           0     0     644     14816     `
+/9              0           0     0     644     37424     `
+/17             0           0     0     644     4616      `
+/27             0           0     0     644     60952     `
+/38             0           0     0     644     7424      `
+/46             0           0     0     644     6968      `
+/56             0           0     0     644     23984     `
+/64             0           0     0     644     5048      `
+/74             0           0     0     644     12600     `
+/85             0           0     0     644     3440      `
+/96             0           0     0     644     9272      `
+/104            0           0     0     644     19408     `
+/113            0           0     0     644     58992     `
+/122            0           0     0     644     7936      `
+/133            0           0     0     644     32544     `
+/140            0           0     0     644     100544    `
+/154            0           0     0     644     47360     `
+/165            0           0     0     644     10488     `
+/177            0           0     0     644     14152     `
+/191            0           0     0     644     28888     `
+/203            0           0     0     644     5088      `
+/216            0           0     0     644     13456     `
+/230            0           0     0     644     8264      `
+/241            0           0     0     644     2728      `
+/257            0           0     0     644     55816     `
+/278            0           0     0     644     15712     `
+/296            0           0     0     644     18280     `
+/313            0           0     0     644     8688      `
+/329            0           0     0     644     6848      `
+/346            0           0     0     644     14168     `
+/363            0           0     0     644     6120      `
+/381            0           0     0     644     15320     `
+/398            0           0     0     644     3368      `
+/414            0           0     0     644     7720      `

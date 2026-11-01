@@ -1,0 +1,1 @@
+savedcmd_lib/crc/built-in.a := rm -f lib/crc/built-in.a;  printf "lib/crc/%s " crc16.o crc-ccitt.o crc32-main.o x86/crc32-pclmul.o x86/crc32c-3way.o tests/built-in.a | xargs ar cDPrST lib/crc/built-in.a

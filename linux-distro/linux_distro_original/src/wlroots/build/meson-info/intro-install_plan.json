@@ -1,0 +1,48 @@
+{
+  "targets": {
+    "/root/src/wlroots/build/libwlroots-0.18.so": {
+      "destination": "{libdir_shared}/libwlroots-0.18.so",
+      "tag": "runtime",
+      "subproject": null,
+      "install_rpath": null,
+      "build_rpaths": []
+    }
+  },
+  "data": {
+    "/root/src/wlroots/build/meson-private/wlroots-0.18.pc": {
+      "destination": "{libdir}/pkgconfig/wlroots-0.18.pc",
+      "tag": "devel",
+      "subproject": null
+    }
+  },
+  "headers": {
+    "/root/src/wlroots/build/include/wlr/config.h": {
+      "destination": "{includedir}/wlroots-0.18/wlr/config.h",
+      "tag": "devel",
+      "subproject": null
+    },
+    "/root/src/wlroots/build/include/wlr/version.h": {
+      "destination": "{includedir}/wlroots-0.18/wlr/version.h",
+      "tag": "devel",
+      "subproject": null
+    }
+  },
+  "install_subdirs": {
+    "/root/src/wlroots/include/wlr": {
+      "destination": "{includedir}/wlroots-0.18/wlr",
+      "tag": "devel",
+      "subproject": null,
+      "exclude_dirs": [],
+      "exclude_files": [
+        "xwayland.h",
+        "render/gles2.h",
+        "meson.build",
+        "render/egl.h",
+        "render/vulkan.h",
+        "backend/x11.h",
+        "config.h.in",
+        "version.h.in"
+      ]
+    }
+  }
+}

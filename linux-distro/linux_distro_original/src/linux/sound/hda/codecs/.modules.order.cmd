@@ -1,0 +1,1 @@
+savedcmd_sound/hda/codecs/modules.order := {   cat sound/hda/codecs/cirrus/modules.order;   cat sound/hda/codecs/hdmi/modules.order;   cat sound/hda/codecs/realtek/modules.order;   cat sound/hda/codecs/side-codecs/modules.order; :; } > sound/hda/codecs/modules.order

@@ -1,0 +1,5640 @@
+[
+  {
+    "name": "linux_dmabuf_v1_c",
+    "id": "2ea88c7@@linux_dmabuf_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/linux-dmabuf-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/linux-dmabuf/linux-dmabuf-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "linux_dmabuf_v1_server_h",
+    "id": "2ea88c7@@linux_dmabuf_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/linux-dmabuf-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/linux-dmabuf/linux-dmabuf-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "linux_dmabuf_v1_client_h",
+    "id": "2ea88c7@@linux_dmabuf_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/linux-dmabuf-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/linux-dmabuf/linux-dmabuf-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "presentation_time_c",
+    "id": "2ea88c7@@presentation_time_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/presentation-time-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/presentation-time/presentation-time.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "presentation_time_server_h",
+    "id": "2ea88c7@@presentation_time_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/presentation-time-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/presentation-time/presentation-time.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "presentation_time_client_h",
+    "id": "2ea88c7@@presentation_time_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/presentation-time-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/presentation-time/presentation-time.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "tablet_v2_c",
+    "id": "2ea88c7@@tablet_v2_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/tablet-v2-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/tablet/tablet-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "tablet_v2_server_h",
+    "id": "2ea88c7@@tablet_v2_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/tablet-v2-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/tablet/tablet-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "tablet_v2_client_h",
+    "id": "2ea88c7@@tablet_v2_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/tablet-v2-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/tablet/tablet-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "viewporter_c",
+    "id": "2ea88c7@@viewporter_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/viewporter-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/viewporter/viewporter.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "viewporter_server_h",
+    "id": "2ea88c7@@viewporter_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/viewporter-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/viewporter/viewporter.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "viewporter_client_h",
+    "id": "2ea88c7@@viewporter_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/viewporter-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/viewporter/viewporter.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_shell_c",
+    "id": "2ea88c7@@xdg_shell_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-shell-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_shell_server_h",
+    "id": "2ea88c7@@xdg_shell_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-shell-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_shell_client_h",
+    "id": "2ea88c7@@xdg_shell_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-shell-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "alpha_modifier_v1_c",
+    "id": "2ea88c7@@alpha_modifier_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/alpha-modifier-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/alpha-modifier/alpha-modifier-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "alpha_modifier_v1_server_h",
+    "id": "2ea88c7@@alpha_modifier_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/alpha-modifier-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/alpha-modifier/alpha-modifier-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "alpha_modifier_v1_client_h",
+    "id": "2ea88c7@@alpha_modifier_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/alpha-modifier-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/alpha-modifier/alpha-modifier-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "content_type_v1_c",
+    "id": "2ea88c7@@content_type_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/content-type-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/content-type/content-type-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "content_type_v1_server_h",
+    "id": "2ea88c7@@content_type_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/content-type-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/content-type/content-type-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "content_type_v1_client_h",
+    "id": "2ea88c7@@content_type_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/content-type-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/content-type/content-type-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "cursor_shape_v1_c",
+    "id": "2ea88c7@@cursor_shape_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/cursor-shape-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/cursor-shape/cursor-shape-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "cursor_shape_v1_server_h",
+    "id": "2ea88c7@@cursor_shape_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/cursor-shape-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/cursor-shape/cursor-shape-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "cursor_shape_v1_client_h",
+    "id": "2ea88c7@@cursor_shape_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/cursor-shape-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/cursor-shape/cursor-shape-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "drm_lease_v1_c",
+    "id": "2ea88c7@@drm_lease_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/drm-lease-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/drm-lease/drm-lease-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "drm_lease_v1_server_h",
+    "id": "2ea88c7@@drm_lease_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/drm-lease-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/drm-lease/drm-lease-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "drm_lease_v1_client_h",
+    "id": "2ea88c7@@drm_lease_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/drm-lease-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/drm-lease/drm-lease-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_foreign_toplevel_list_v1_c",
+    "id": "2ea88c7@@ext_foreign_toplevel_list_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-foreign-toplevel-list-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-foreign-toplevel-list/ext-foreign-toplevel-list-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_foreign_toplevel_list_v1_server_h",
+    "id": "2ea88c7@@ext_foreign_toplevel_list_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-foreign-toplevel-list-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-foreign-toplevel-list/ext-foreign-toplevel-list-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_foreign_toplevel_list_v1_client_h",
+    "id": "2ea88c7@@ext_foreign_toplevel_list_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-foreign-toplevel-list-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-foreign-toplevel-list/ext-foreign-toplevel-list-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_idle_notify_v1_c",
+    "id": "2ea88c7@@ext_idle_notify_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-idle-notify-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-idle-notify/ext-idle-notify-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_idle_notify_v1_server_h",
+    "id": "2ea88c7@@ext_idle_notify_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-idle-notify-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-idle-notify/ext-idle-notify-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_idle_notify_v1_client_h",
+    "id": "2ea88c7@@ext_idle_notify_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-idle-notify-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-idle-notify/ext-idle-notify-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_session_lock_v1_c",
+    "id": "2ea88c7@@ext_session_lock_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-session-lock-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-session-lock/ext-session-lock-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_session_lock_v1_server_h",
+    "id": "2ea88c7@@ext_session_lock_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-session-lock-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-session-lock/ext-session-lock-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_session_lock_v1_client_h",
+    "id": "2ea88c7@@ext_session_lock_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-session-lock-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-session-lock/ext-session-lock-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "fractional_scale_v1_c",
+    "id": "2ea88c7@@fractional_scale_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/fractional-scale-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/fractional-scale/fractional-scale-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "fractional_scale_v1_server_h",
+    "id": "2ea88c7@@fractional_scale_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/fractional-scale-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/fractional-scale/fractional-scale-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "fractional_scale_v1_client_h",
+    "id": "2ea88c7@@fractional_scale_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/fractional-scale-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/fractional-scale/fractional-scale-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "linux_drm_syncobj_v1_c",
+    "id": "2ea88c7@@linux_drm_syncobj_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/linux-drm-syncobj-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/linux-drm-syncobj/linux-drm-syncobj-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "linux_drm_syncobj_v1_server_h",
+    "id": "2ea88c7@@linux_drm_syncobj_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/linux-drm-syncobj-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/linux-drm-syncobj/linux-drm-syncobj-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "linux_drm_syncobj_v1_client_h",
+    "id": "2ea88c7@@linux_drm_syncobj_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/linux-drm-syncobj-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/linux-drm-syncobj/linux-drm-syncobj-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "security_context_v1_c",
+    "id": "2ea88c7@@security_context_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/security-context-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/security-context/security-context-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "security_context_v1_server_h",
+    "id": "2ea88c7@@security_context_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/security-context-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/security-context/security-context-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "security_context_v1_client_h",
+    "id": "2ea88c7@@security_context_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/security-context-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/security-context/security-context-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "single_pixel_buffer_v1_c",
+    "id": "2ea88c7@@single_pixel_buffer_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/single-pixel-buffer-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/single-pixel-buffer/single-pixel-buffer-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "single_pixel_buffer_v1_server_h",
+    "id": "2ea88c7@@single_pixel_buffer_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/single-pixel-buffer-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/single-pixel-buffer/single-pixel-buffer-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "single_pixel_buffer_v1_client_h",
+    "id": "2ea88c7@@single_pixel_buffer_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/single-pixel-buffer-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/single-pixel-buffer/single-pixel-buffer-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_activation_v1_c",
+    "id": "2ea88c7@@xdg_activation_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-activation-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/xdg-activation/xdg-activation-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_activation_v1_server_h",
+    "id": "2ea88c7@@xdg_activation_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-activation-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/xdg-activation/xdg-activation-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_activation_v1_client_h",
+    "id": "2ea88c7@@xdg_activation_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-activation-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/xdg-activation/xdg-activation-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xwayland_shell_v1_c",
+    "id": "2ea88c7@@xwayland_shell_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xwayland-shell-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/xwayland-shell/xwayland-shell-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xwayland_shell_v1_server_h",
+    "id": "2ea88c7@@xwayland_shell_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xwayland-shell-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/xwayland-shell/xwayland-shell-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xwayland_shell_v1_client_h",
+    "id": "2ea88c7@@xwayland_shell_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xwayland-shell-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/xwayland-shell/xwayland-shell-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "tearing_control_v1_c",
+    "id": "2ea88c7@@tearing_control_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/tearing-control-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/tearing-control/tearing-control-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "tearing_control_v1_server_h",
+    "id": "2ea88c7@@tearing_control_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/tearing-control-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/tearing-control/tearing-control-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "tearing_control_v1_client_h",
+    "id": "2ea88c7@@tearing_control_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/tearing-control-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/tearing-control/tearing-control-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "fullscreen_shell_unstable_v1_c",
+    "id": "2ea88c7@@fullscreen_shell_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/fullscreen-shell-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/fullscreen-shell/fullscreen-shell-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "fullscreen_shell_unstable_v1_server_h",
+    "id": "2ea88c7@@fullscreen_shell_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/fullscreen-shell-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/fullscreen-shell/fullscreen-shell-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "fullscreen_shell_unstable_v1_client_h",
+    "id": "2ea88c7@@fullscreen_shell_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/fullscreen-shell-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/fullscreen-shell/fullscreen-shell-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "idle_inhibit_unstable_v1_c",
+    "id": "2ea88c7@@idle_inhibit_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/idle-inhibit-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/idle-inhibit/idle-inhibit-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "idle_inhibit_unstable_v1_server_h",
+    "id": "2ea88c7@@idle_inhibit_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/idle-inhibit-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/idle-inhibit/idle-inhibit-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "idle_inhibit_unstable_v1_client_h",
+    "id": "2ea88c7@@idle_inhibit_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/idle-inhibit-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/idle-inhibit/idle-inhibit-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "keyboard_shortcuts_inhibit_unstable_v1_c",
+    "id": "2ea88c7@@keyboard_shortcuts_inhibit_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/keyboard-shortcuts-inhibit-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/keyboard-shortcuts-inhibit/keyboard-shortcuts-inhibit-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "keyboard_shortcuts_inhibit_unstable_v1_server_h",
+    "id": "2ea88c7@@keyboard_shortcuts_inhibit_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/keyboard-shortcuts-inhibit-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/keyboard-shortcuts-inhibit/keyboard-shortcuts-inhibit-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "keyboard_shortcuts_inhibit_unstable_v1_client_h",
+    "id": "2ea88c7@@keyboard_shortcuts_inhibit_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/keyboard-shortcuts-inhibit/keyboard-shortcuts-inhibit-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "pointer_constraints_unstable_v1_c",
+    "id": "2ea88c7@@pointer_constraints_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/pointer-constraints-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/pointer-constraints/pointer-constraints-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "pointer_constraints_unstable_v1_server_h",
+    "id": "2ea88c7@@pointer_constraints_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/pointer-constraints-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/pointer-constraints/pointer-constraints-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "pointer_constraints_unstable_v1_client_h",
+    "id": "2ea88c7@@pointer_constraints_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/pointer-constraints-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/pointer-constraints/pointer-constraints-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "pointer_gestures_unstable_v1_c",
+    "id": "2ea88c7@@pointer_gestures_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/pointer-gestures-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/pointer-gestures/pointer-gestures-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "pointer_gestures_unstable_v1_server_h",
+    "id": "2ea88c7@@pointer_gestures_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/pointer-gestures-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/pointer-gestures/pointer-gestures-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "pointer_gestures_unstable_v1_client_h",
+    "id": "2ea88c7@@pointer_gestures_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/pointer-gestures-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/pointer-gestures/pointer-gestures-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "primary_selection_unstable_v1_c",
+    "id": "2ea88c7@@primary_selection_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/primary-selection-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/primary-selection/primary-selection-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "primary_selection_unstable_v1_server_h",
+    "id": "2ea88c7@@primary_selection_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/primary-selection-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/primary-selection/primary-selection-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "primary_selection_unstable_v1_client_h",
+    "id": "2ea88c7@@primary_selection_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/primary-selection-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/primary-selection/primary-selection-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "relative_pointer_unstable_v1_c",
+    "id": "2ea88c7@@relative_pointer_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/relative-pointer-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/relative-pointer/relative-pointer-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "relative_pointer_unstable_v1_server_h",
+    "id": "2ea88c7@@relative_pointer_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/relative-pointer-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/relative-pointer/relative-pointer-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "relative_pointer_unstable_v1_client_h",
+    "id": "2ea88c7@@relative_pointer_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/relative-pointer-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/relative-pointer/relative-pointer-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "text_input_unstable_v3_c",
+    "id": "2ea88c7@@text_input_unstable_v3_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/text-input-unstable-v3-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/text-input/text-input-unstable-v3.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "text_input_unstable_v3_server_h",
+    "id": "2ea88c7@@text_input_unstable_v3_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/text-input-unstable-v3-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/text-input/text-input-unstable-v3.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "text_input_unstable_v3_client_h",
+    "id": "2ea88c7@@text_input_unstable_v3_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/text-input-unstable-v3-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/text-input/text-input-unstable-v3.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_decoration_unstable_v1_c",
+    "id": "2ea88c7@@xdg_decoration_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-decoration-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_decoration_unstable_v1_server_h",
+    "id": "2ea88c7@@xdg_decoration_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-decoration-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_decoration_unstable_v1_client_h",
+    "id": "2ea88c7@@xdg_decoration_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-decoration-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_foreign_unstable_v1_c",
+    "id": "2ea88c7@@xdg_foreign_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-foreign/xdg-foreign-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_foreign_unstable_v1_server_h",
+    "id": "2ea88c7@@xdg_foreign_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-foreign/xdg-foreign-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_foreign_unstable_v1_client_h",
+    "id": "2ea88c7@@xdg_foreign_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-foreign/xdg-foreign-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_foreign_unstable_v2_c",
+    "id": "2ea88c7@@xdg_foreign_unstable_v2_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v2-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-foreign/xdg-foreign-unstable-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_foreign_unstable_v2_server_h",
+    "id": "2ea88c7@@xdg_foreign_unstable_v2_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v2-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-foreign/xdg-foreign-unstable-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_foreign_unstable_v2_client_h",
+    "id": "2ea88c7@@xdg_foreign_unstable_v2_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v2-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-foreign/xdg-foreign-unstable-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_output_unstable_v1_c",
+    "id": "2ea88c7@@xdg_output_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-output-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_output_unstable_v1_server_h",
+    "id": "2ea88c7@@xdg_output_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-output-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "xdg_output_unstable_v1_client_h",
+    "id": "2ea88c7@@xdg_output_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/xdg-output-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_transient_seat_v1_c",
+    "id": "2ea88c7@@ext_transient_seat_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-transient-seat-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-transient-seat/ext-transient-seat-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_transient_seat_v1_server_h",
+    "id": "2ea88c7@@ext_transient_seat_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-transient-seat-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-transient-seat/ext-transient-seat-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "ext_transient_seat_v1_client_h",
+    "id": "2ea88c7@@ext_transient_seat_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/ext-transient-seat-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/wayland-protocols/staging/ext-transient-seat/ext-transient-seat-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "drm_c",
+    "id": "2ea88c7@@drm_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/drm-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/drm.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "drm_server_h",
+    "id": "2ea88c7@@drm_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/drm-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/drm.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "drm_client_h",
+    "id": "2ea88c7@@drm_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/drm-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/drm.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "input_method_unstable_v2_c",
+    "id": "2ea88c7@@input_method_unstable_v2_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/input-method-unstable-v2-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/input-method-unstable-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "input_method_unstable_v2_server_h",
+    "id": "2ea88c7@@input_method_unstable_v2_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/input-method-unstable-v2-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/input-method-unstable-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "input_method_unstable_v2_client_h",
+    "id": "2ea88c7@@input_method_unstable_v2_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/input-method-unstable-v2-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/input-method-unstable-v2.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "kde_server_decoration_c",
+    "id": "2ea88c7@@kde_server_decoration_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/server-decoration-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/server-decoration.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "kde_server_decoration_server_h",
+    "id": "2ea88c7@@kde_server_decoration_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/server-decoration-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/server-decoration.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "kde_server_decoration_client_h",
+    "id": "2ea88c7@@kde_server_decoration_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/server-decoration-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/server-decoration.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "virtual_keyboard_unstable_v1_c",
+    "id": "2ea88c7@@virtual_keyboard_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/virtual-keyboard-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/virtual-keyboard-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "virtual_keyboard_unstable_v1_server_h",
+    "id": "2ea88c7@@virtual_keyboard_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/virtual-keyboard-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/virtual-keyboard-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "virtual_keyboard_unstable_v1_client_h",
+    "id": "2ea88c7@@virtual_keyboard_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/virtual-keyboard-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/virtual-keyboard-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_data_control_unstable_v1_c",
+    "id": "2ea88c7@@wlr_data_control_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-data-control-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-data-control-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_data_control_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_data_control_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-data-control-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-data-control-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_data_control_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_data_control_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-data-control-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-data-control-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_export_dmabuf_unstable_v1_c",
+    "id": "2ea88c7@@wlr_export_dmabuf_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-export-dmabuf-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-export-dmabuf-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_export_dmabuf_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_export_dmabuf_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-export-dmabuf-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-export-dmabuf-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_export_dmabuf_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_export_dmabuf_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-export-dmabuf-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-export-dmabuf-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_foreign_toplevel_management_unstable_v1_c",
+    "id": "2ea88c7@@wlr_foreign_toplevel_management_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-foreign-toplevel-management-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-foreign-toplevel-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_foreign_toplevel_management_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_foreign_toplevel_management_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-foreign-toplevel-management-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-foreign-toplevel-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_foreign_toplevel_management_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_foreign_toplevel_management_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-foreign-toplevel-management-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-foreign-toplevel-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_gamma_control_unstable_v1_c",
+    "id": "2ea88c7@@wlr_gamma_control_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-gamma-control-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-gamma-control-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_gamma_control_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_gamma_control_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-gamma-control-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-gamma-control-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_gamma_control_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_gamma_control_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-gamma-control-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-gamma-control-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_layer_shell_unstable_v1_c",
+    "id": "2ea88c7@@wlr_layer_shell_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-layer-shell-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-layer-shell-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_layer_shell_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_layer_shell_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-layer-shell-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-layer-shell-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_layer_shell_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_layer_shell_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-layer-shell-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-layer-shell-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_output_management_unstable_v1_c",
+    "id": "2ea88c7@@wlr_output_management_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-output-management-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-output-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_output_management_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_output_management_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-output-management-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-output-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_output_management_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_output_management_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-output-management-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-output-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_output_power_management_unstable_v1_c",
+    "id": "2ea88c7@@wlr_output_power_management_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-output-power-management-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-output-power-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_output_power_management_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_output_power_management_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-output-power-management-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-output-power-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_output_power_management_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_output_power_management_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-output-power-management-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-output-power-management-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_screencopy_unstable_v1_c",
+    "id": "2ea88c7@@wlr_screencopy_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-screencopy-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-screencopy-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_screencopy_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_screencopy_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-screencopy-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-screencopy-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_screencopy_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_screencopy_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-screencopy-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-screencopy-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_virtual_pointer_unstable_v1_c",
+    "id": "2ea88c7@@wlr_virtual_pointer_unstable_v1_c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-virtual-pointer-unstable-v1-protocol.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "private-code",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-virtual-pointer-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_virtual_pointer_unstable_v1_server_h",
+    "id": "2ea88c7@@wlr_virtual_pointer_unstable_v1_server_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-virtual-pointer-unstable-v1-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "server-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-virtual-pointer-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlr_virtual_pointer_unstable_v1_client_h",
+    "id": "2ea88c7@@wlr_virtual_pointer_unstable_v1_client_h@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/protocol/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/protocol/wlr-virtual-pointer-unstable-v1-client-protocol.h"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/wayland-scanner",
+          "client-header",
+          "@INPUT@",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/root/src/wlroots/protocol/wlr-virtual-pointer-unstable-v1.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "pnpids.c",
+    "id": "e3a90c0@@pnpids.c@cus",
+    "type": "custom",
+    "defined_in": "/root/src/wlroots/backend/drm/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/backend/drm/pnpids.c"
+    ],
+    "build_by_default": false,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/root/src/wlroots/backend/drm/gen_pnpids.sh"
+        ],
+        "parameters": [],
+        "sources": [
+          "//usr/share/hwdata/pnp.ids"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "wlroots-0.18",
+    "id": "wlroots-0.18@sha",
+    "type": "shared library",
+    "defined_in": "/root/src/wlroots/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/libwlroots-0.18.so"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/libwlroots-0.18.so.p",
+          "-I/root/src/wlroots/build",
+          "-I/root/src/wlroots",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/root/src/wlroots/build/protocol",
+          "-I/root/src/wlroots/build/backend/drm",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../=",
+          "-fPIC"
+        ],
+        "sources": [
+          "/root/src/wlroots/render/color.c",
+          "/root/src/wlroots/render/dmabuf.c",
+          "/root/src/wlroots/render/drm_format_set.c",
+          "/root/src/wlroots/render/drm_syncobj.c",
+          "/root/src/wlroots/render/pass.c",
+          "/root/src/wlroots/render/pixel_format.c",
+          "/root/src/wlroots/render/swapchain.c",
+          "/root/src/wlroots/render/wlr_renderer.c",
+          "/root/src/wlroots/render/wlr_texture.c",
+          "/root/src/wlroots/render/dmabuf_linux.c",
+          "/root/src/wlroots/render/pixman/pass.c",
+          "/root/src/wlroots/render/pixman/pixel_format.c",
+          "/root/src/wlroots/render/pixman/renderer.c",
+          "/root/src/wlroots/render/allocator/allocator.c",
+          "/root/src/wlroots/render/allocator/shm.c",
+          "/root/src/wlroots/render/allocator/drm_dumb.c",
+          "/root/src/wlroots/render/color_fallback.c",
+          "/root/src/wlroots/backend/backend.c",
+          "/root/src/wlroots/backend/session/session.c",
+          "/root/src/wlroots/backend/drm/atomic.c",
+          "/root/src/wlroots/backend/drm/backend.c",
+          "/root/src/wlroots/backend/drm/drm.c",
+          "/root/src/wlroots/backend/drm/fb.c",
+          "/root/src/wlroots/backend/drm/legacy.c",
+          "/root/src/wlroots/backend/drm/monitor.c",
+          "/root/src/wlroots/backend/drm/properties.c",
+          "/root/src/wlroots/backend/drm/renderer.c",
+          "/root/src/wlroots/backend/drm/util.c",
+          "/root/src/wlroots/backend/libinput/backend.c",
+          "/root/src/wlroots/backend/libinput/events.c",
+          "/root/src/wlroots/backend/libinput/keyboard.c",
+          "/root/src/wlroots/backend/libinput/pointer.c",
+          "/root/src/wlroots/backend/libinput/switch.c",
+          "/root/src/wlroots/backend/libinput/tablet_pad.c",
+          "/root/src/wlroots/backend/libinput/tablet_tool.c",
+          "/root/src/wlroots/backend/libinput/touch.c",
+          "/root/src/wlroots/backend/multi/backend.c",
+          "/root/src/wlroots/backend/wayland/backend.c",
+          "/root/src/wlroots/backend/wayland/output.c",
+          "/root/src/wlroots/backend/wayland/seat.c",
+          "/root/src/wlroots/backend/wayland/pointer.c",
+          "/root/src/wlroots/backend/wayland/tablet_v2.c",
+          "/root/src/wlroots/backend/headless/backend.c",
+          "/root/src/wlroots/backend/headless/output.c",
+          "/root/src/wlroots/types/data_device/wlr_data_device.c",
+          "/root/src/wlroots/types/data_device/wlr_data_offer.c",
+          "/root/src/wlroots/types/data_device/wlr_data_source.c",
+          "/root/src/wlroots/types/data_device/wlr_drag.c",
+          "/root/src/wlroots/types/output/cursor.c",
+          "/root/src/wlroots/types/output/output.c",
+          "/root/src/wlroots/types/output/render.c",
+          "/root/src/wlroots/types/output/state.c",
+          "/root/src/wlroots/types/output/swapchain.c",
+          "/root/src/wlroots/types/scene/drag_icon.c",
+          "/root/src/wlroots/types/scene/subsurface_tree.c",
+          "/root/src/wlroots/types/scene/surface.c",
+          "/root/src/wlroots/types/scene/wlr_scene.c",
+          "/root/src/wlroots/types/scene/output_layout.c",
+          "/root/src/wlroots/types/scene/xdg_shell.c",
+          "/root/src/wlroots/types/scene/layer_shell_v1.c",
+          "/root/src/wlroots/types/seat/wlr_seat_keyboard.c",
+          "/root/src/wlroots/types/seat/wlr_seat_pointer.c",
+          "/root/src/wlroots/types/seat/wlr_seat_touch.c",
+          "/root/src/wlroots/types/seat/wlr_seat.c",
+          "/root/src/wlroots/types/tablet_v2/wlr_tablet_v2_pad.c",
+          "/root/src/wlroots/types/tablet_v2/wlr_tablet_v2_tablet.c",
+          "/root/src/wlroots/types/tablet_v2/wlr_tablet_v2_tool.c",
+          "/root/src/wlroots/types/tablet_v2/wlr_tablet_v2.c",
+          "/root/src/wlroots/types/xdg_shell/wlr_xdg_popup.c",
+          "/root/src/wlroots/types/xdg_shell/wlr_xdg_positioner.c",
+          "/root/src/wlroots/types/xdg_shell/wlr_xdg_shell.c",
+          "/root/src/wlroots/types/xdg_shell/wlr_xdg_surface.c",
+          "/root/src/wlroots/types/xdg_shell/wlr_xdg_toplevel.c",
+          "/root/src/wlroots/types/buffer/buffer.c",
+          "/root/src/wlroots/types/buffer/client.c",
+          "/root/src/wlroots/types/buffer/dmabuf.c",
+          "/root/src/wlroots/types/buffer/readonly_data.c",
+          "/root/src/wlroots/types/buffer/resource.c",
+          "/root/src/wlroots/types/wlr_alpha_modifier_v1.c",
+          "/root/src/wlroots/types/wlr_compositor.c",
+          "/root/src/wlroots/types/wlr_content_type_v1.c",
+          "/root/src/wlroots/types/wlr_cursor_shape_v1.c",
+          "/root/src/wlroots/types/wlr_cursor.c",
+          "/root/src/wlroots/types/wlr_damage_ring.c",
+          "/root/src/wlroots/types/wlr_data_control_v1.c",
+          "/root/src/wlroots/types/wlr_drm.c",
+          "/root/src/wlroots/types/wlr_export_dmabuf_v1.c",
+          "/root/src/wlroots/types/wlr_foreign_toplevel_management_v1.c",
+          "/root/src/wlroots/types/wlr_ext_foreign_toplevel_list_v1.c",
+          "/root/src/wlroots/types/wlr_fullscreen_shell_v1.c",
+          "/root/src/wlroots/types/wlr_gamma_control_v1.c",
+          "/root/src/wlroots/types/wlr_idle_inhibit_v1.c",
+          "/root/src/wlroots/types/wlr_idle_notify_v1.c",
+          "/root/src/wlroots/types/wlr_input_device.c",
+          "/root/src/wlroots/types/wlr_input_method_v2.c",
+          "/root/src/wlroots/types/wlr_keyboard.c",
+          "/root/src/wlroots/types/wlr_keyboard_group.c",
+          "/root/src/wlroots/types/wlr_keyboard_shortcuts_inhibit_v1.c",
+          "/root/src/wlroots/types/wlr_layer_shell_v1.c",
+          "/root/src/wlroots/types/wlr_linux_dmabuf_v1.c",
+          "/root/src/wlroots/types/wlr_linux_drm_syncobj_v1.c",
+          "/root/src/wlroots/types/wlr_matrix.c",
+          "/root/src/wlroots/types/wlr_output_layer.c",
+          "/root/src/wlroots/types/wlr_output_layout.c",
+          "/root/src/wlroots/types/wlr_output_management_v1.c",
+          "/root/src/wlroots/types/wlr_output_power_management_v1.c",
+          "/root/src/wlroots/types/wlr_output_swapchain_manager.c",
+          "/root/src/wlroots/types/wlr_pointer_constraints_v1.c",
+          "/root/src/wlroots/types/wlr_pointer_gestures_v1.c",
+          "/root/src/wlroots/types/wlr_pointer.c",
+          "/root/src/wlroots/types/wlr_presentation_time.c",
+          "/root/src/wlroots/types/wlr_primary_selection_v1.c",
+          "/root/src/wlroots/types/wlr_primary_selection.c",
+          "/root/src/wlroots/types/wlr_region.c",
+          "/root/src/wlroots/types/wlr_relative_pointer_v1.c",
+          "/root/src/wlroots/types/wlr_screencopy_v1.c",
+          "/root/src/wlroots/types/wlr_security_context_v1.c",
+          "/root/src/wlroots/types/wlr_server_decoration.c",
+          "/root/src/wlroots/types/wlr_session_lock_v1.c",
+          "/root/src/wlroots/types/wlr_shm.c",
+          "/root/src/wlroots/types/wlr_single_pixel_buffer_v1.c",
+          "/root/src/wlroots/types/wlr_subcompositor.c",
+          "/root/src/wlroots/types/wlr_fractional_scale_v1.c",
+          "/root/src/wlroots/types/wlr_switch.c",
+          "/root/src/wlroots/types/wlr_tablet_pad.c",
+          "/root/src/wlroots/types/wlr_tablet_tool.c",
+          "/root/src/wlroots/types/wlr_text_input_v3.c",
+          "/root/src/wlroots/types/wlr_touch.c",
+          "/root/src/wlroots/types/wlr_transient_seat_v1.c",
+          "/root/src/wlroots/types/wlr_viewporter.c",
+          "/root/src/wlroots/types/wlr_virtual_keyboard_v1.c",
+          "/root/src/wlroots/types/wlr_virtual_pointer_v1.c",
+          "/root/src/wlroots/types/wlr_xcursor_manager.c",
+          "/root/src/wlroots/types/wlr_xdg_activation_v1.c",
+          "/root/src/wlroots/types/wlr_xdg_decoration_v1.c",
+          "/root/src/wlroots/types/wlr_xdg_foreign_v1.c",
+          "/root/src/wlroots/types/wlr_xdg_foreign_v2.c",
+          "/root/src/wlroots/types/wlr_xdg_foreign_registry.c",
+          "/root/src/wlroots/types/wlr_xdg_output_v1.c",
+          "/root/src/wlroots/types/wlr_tearing_control_v1.c",
+          "/root/src/wlroots/types/wlr_drm_lease_v1.c",
+          "/root/src/wlroots/util/addon.c",
+          "/root/src/wlroots/util/array.c",
+          "/root/src/wlroots/util/box.c",
+          "/root/src/wlroots/util/env.c",
+          "/root/src/wlroots/util/global.c",
+          "/root/src/wlroots/util/log.c",
+          "/root/src/wlroots/util/rect_union.c",
+          "/root/src/wlroots/util/region.c",
+          "/root/src/wlroots/util/set.c",
+          "/root/src/wlroots/util/shm.c",
+          "/root/src/wlroots/util/time.c",
+          "/root/src/wlroots/util/token.c",
+          "/root/src/wlroots/util/transform.c",
+          "/root/src/wlroots/util/utf8.c",
+          "/root/src/wlroots/xcursor/wlr_xcursor.c",
+          "/root/src/wlroots/xcursor/xcursor.c"
+        ],
+        "generated_sources": [
+          "/root/src/wlroots/build/protocol/linux-dmabuf-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/presentation-time-protocol.c",
+          "/root/src/wlroots/build/protocol/tablet-v2-protocol.c",
+          "/root/src/wlroots/build/protocol/viewporter-protocol.c",
+          "/root/src/wlroots/build/protocol/xdg-shell-protocol.c",
+          "/root/src/wlroots/build/protocol/alpha-modifier-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/content-type-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/cursor-shape-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/drm-lease-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/ext-foreign-toplevel-list-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/ext-idle-notify-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/ext-session-lock-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/fractional-scale-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/linux-drm-syncobj-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/security-context-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/single-pixel-buffer-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/xdg-activation-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/xwayland-shell-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/tearing-control-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/fullscreen-shell-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/idle-inhibit-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/keyboard-shortcuts-inhibit-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/pointer-constraints-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/pointer-gestures-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/primary-selection-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/relative-pointer-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/text-input-unstable-v3-protocol.c",
+          "/root/src/wlroots/build/protocol/xdg-decoration-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/xdg-foreign-unstable-v2-protocol.c",
+          "/root/src/wlroots/build/protocol/xdg-output-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/ext-transient-seat-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/drm-protocol.c",
+          "/root/src/wlroots/build/protocol/input-method-unstable-v2-protocol.c",
+          "/root/src/wlroots/build/protocol/server-decoration-protocol.c",
+          "/root/src/wlroots/build/protocol/virtual-keyboard-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-data-control-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-export-dmabuf-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-foreign-toplevel-management-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-gamma-control-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-layer-shell-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-output-management-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-output-power-management-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-screencopy-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/protocol/wlr-virtual-pointer-unstable-v1-protocol.c",
+          "/root/src/wlroots/build/backend/drm/pnpids.c"
+        ],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-shared",
+          "-fPIC",
+          "-Wl,-soname,libwlroots-0.18.so",
+          "-Wl,--version-script,/root/src/wlroots/wlroots.syms",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client"
+    ],
+    "depends": [],
+    "installed": true,
+    "install_filename": [
+      "/usr/local/lib/libwlroots-0.18.so"
+    ]
+  },
+  {
+    "name": "simple",
+    "id": "c590b3c@@simple@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/simple"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/simple.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/simple.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "pointer",
+    "id": "c590b3c@@pointer@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/pointer"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/pointer.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/pointer.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "touch",
+    "id": "c590b3c@@touch@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/touch"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/touch.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/touch.c",
+          "/root/src/wlroots/examples/cat.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "tablet",
+    "id": "c590b3c@@tablet@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/tablet"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/tablet.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/tablet.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "rotation",
+    "id": "c590b3c@@rotation@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/rotation"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/rotation.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/rotation.c",
+          "/root/src/wlroots/examples/cat.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "output-layout",
+    "id": "c590b3c@@output-layout@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/output-layout"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/output-layout.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/output-layout.c",
+          "/root/src/wlroots/examples/cat.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "fullscreen-shell",
+    "id": "c590b3c@@fullscreen-shell@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/fullscreen-shell"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/fullscreen-shell.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/root/src/wlroots/build/protocol",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/fullscreen-shell.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "scene-graph",
+    "id": "c590b3c@@scene-graph@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/scene-graph"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/scene-graph.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/root/src/wlroots/build/protocol",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/scene-graph.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "output-layers",
+    "id": "c590b3c@@output-layers@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/examples/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/examples/output-layers"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/examples/output-layers.p",
+          "-I/root/src/wlroots/build/examples",
+          "-I/root/src/wlroots/examples",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/root/src/wlroots/build/protocol",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/examples/output-layers.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client",
+      "libdrm"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  },
+  {
+    "name": "tinywl",
+    "id": "3a9e608@@tinywl@exe",
+    "type": "executable",
+    "defined_in": "/root/src/wlroots/tinywl/meson.build",
+    "filename": [
+      "/root/src/wlroots/build/tinywl/tinywl"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/root/src/wlroots/build/tinywl/tinywl.p",
+          "-I/root/src/wlroots/build/tinywl",
+          "-I/root/src/wlroots/tinywl",
+          "-I/root/src/wlroots/build/include",
+          "-I/root/src/wlroots/include",
+          "-I/root/src/wlroots/build/protocol",
+          "-I/usr/include/libdrm",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/elogind",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Werror",
+          "-std=c23",
+          "-O0",
+          "-g",
+          "-D_POSIX_C_SOURCE=200809L",
+          "-DWLR_USE_UNSTABLE",
+          "-DWLR_LITTLE_ENDIAN=1",
+          "-DWLR_BIG_ENDIAN=0",
+          "-Wundef",
+          "-Wlogical-op",
+          "-Wmissing-include-dirs",
+          "-Wold-style-definition",
+          "-Wpointer-arith",
+          "-Winit-self",
+          "-Wstrict-prototypes",
+          "-Wimplicit-fallthrough=2",
+          "-Wendif-labels",
+          "-Wstrict-aliasing=2",
+          "-Woverflow",
+          "-Wmissing-prototypes",
+          "-Walloca",
+          "-Wno-missing-braces",
+          "-Wno-missing-field-initializers",
+          "-Wno-unused-parameter",
+          "-fmacro-prefix-map=../="
+        ],
+        "sources": [
+          "/root/src/wlroots/tinywl/tinywl.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,$ORIGIN/..",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "libwlroots-0.18.so",
+          "/usr/lib/libwayland-server.so",
+          "-lm",
+          "/usr/lib/libdrm.so",
+          "/usr/lib/libxkbcommon.so",
+          "/usr/lib/libpixman-1.so",
+          "-lrt",
+          "/usr/lib/libudev.so",
+          "/usr/lib/libseat.so",
+          "/usr/lib/libdisplay-info.so",
+          "/usr/lib/libinput.so",
+          "/usr/lib/libwayland-client.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  }
+]

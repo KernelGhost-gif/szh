@@ -1,0 +1,1 @@
+savedcmd_net/ipv6/netfilter/built-in.a := rm -f net/ipv6/netfilter/built-in.a;  printf "net/ipv6/netfilter/%s " nf_defrag_ipv6_hooks.o nf_conntrack_reasm.o ip6t_ipv6header.o | xargs ar cDPrST net/ipv6/netfilter/built-in.a

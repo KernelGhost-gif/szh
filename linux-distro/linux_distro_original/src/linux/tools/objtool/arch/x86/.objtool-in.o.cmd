@@ -1,0 +1,1 @@
+cmd_/root/src/linux/tools/objtool/arch/x86/objtool-in.o :=  ld -r -o /root/src/linux/tools/objtool/arch/x86/objtool-in.o  /root/src/linux/tools/objtool/arch/x86/special.o /root/src/linux/tools/objtool/arch/x86/decode.o /root/src/linux/tools/objtool/arch/x86/orc.o

@@ -1,0 +1,7 @@
+{
+  "/root/src/wlroots/build/libwlroots-0.18.so": "/usr/local/lib/libwlroots-0.18.so",
+  "/root/src/wlroots/build/meson-private/wlroots-0.18.pc": "/usr/local/lib/pkgconfig/wlroots-0.18.pc",
+  "/root/src/wlroots/build/include/wlr/config.h": "/usr/local/include/wlroots-0.18/wlr/config.h",
+  "/root/src/wlroots/build/include/wlr/version.h": "/usr/local/include/wlroots-0.18/wlr/version.h",
+  "/root/src/wlroots/include/wlr": "/usr/local/include/wlroots-0.18/wlr"
+}

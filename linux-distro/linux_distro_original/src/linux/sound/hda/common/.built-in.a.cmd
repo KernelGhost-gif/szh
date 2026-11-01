@@ -1,0 +1,1 @@
+savedcmd_sound/hda/common/built-in.a := rm -f sound/hda/common/built-in.a;  printf "sound/hda/common/%s " bind.o codec.o jack.o auto_parser.o sysfs.o controller.o proc.o hwdep.o | xargs ar cDPrST sound/hda/common/built-in.a

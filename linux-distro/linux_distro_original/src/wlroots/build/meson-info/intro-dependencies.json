@@ -1,0 +1,356 @@
+[
+  {
+    "name": "wayland-server",
+    "type": "pkgconfig",
+    "version": "1.24.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libwayland-server.so",
+      "-lm"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_server"
+    ]
+  },
+  {
+    "name": "libdrm",
+    "type": "pkgconfig",
+    "version": "2.4.131",
+    "compile_args": [
+      "-I/usr/include/libdrm"
+    ],
+    "link_args": [
+      "/usr/lib/libdrm.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "drm",
+      "libdrm_header"
+    ]
+  },
+  {
+    "name": "xkbcommon",
+    "type": "pkgconfig",
+    "version": "1.12.2",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libxkbcommon.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "xkbcommon"
+    ]
+  },
+  {
+    "name": "pixman-1",
+    "type": "pkgconfig",
+    "version": "0.46.4",
+    "compile_args": [
+      "-I/usr/include/pixman-1"
+    ],
+    "link_args": [
+      "/usr/lib/libpixman-1.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "pixman"
+    ]
+  },
+  {
+    "name": "wayland-protocols",
+    "type": "pkgconfig",
+    "version": "1.46",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_protos"
+    ]
+  },
+  {
+    "name": "wayland-scanner",
+    "type": "pkgconfig",
+    "version": "1.24.0",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_scanner_dep"
+    ]
+  },
+  {
+    "name": "libudev",
+    "type": "pkgconfig",
+    "version": "251",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libudev.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "udev"
+    ]
+  },
+  {
+    "name": "libseat",
+    "type": "pkgconfig",
+    "version": "0.9.1",
+    "compile_args": [
+      "-I/usr/include/elogind"
+    ],
+    "link_args": [
+      "/usr/lib/libseat.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libseat"
+    ]
+  },
+  {
+    "name": "hwdata",
+    "type": "pkgconfig",
+    "version": "0.401",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "hwdata"
+    ]
+  },
+  {
+    "name": "libdisplay-info",
+    "type": "pkgconfig",
+    "version": "0.3.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libdisplay-info.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libdisplay_info"
+    ]
+  },
+  {
+    "name": "libinput",
+    "type": "pkgconfig",
+    "version": "1.30.3",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libinput.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libinput"
+    ]
+  },
+  {
+    "name": "xcb",
+    "type": "pkgconfig",
+    "version": "1.17.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libxcb.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "xcb-dri3",
+    "type": "pkgconfig",
+    "version": "1.17.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libxcb-dri3.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "xcb-present",
+    "type": "pkgconfig",
+    "version": "1.17.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libxcb-present.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "xcb-render",
+    "type": "pkgconfig",
+    "version": "1.17.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libxcb-render.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "wayland-client",
+    "type": "pkgconfig",
+    "version": "1.24.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libwayland-client.so",
+      "-lm"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_client"
+    ]
+  },
+  {
+    "name": "wayland-egl",
+    "type": "pkgconfig",
+    "version": "18.1.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libwayland-egl.so",
+      "/usr/lib/libwayland-client.so",
+      "-lm"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_egl"
+    ]
+  },
+  {
+    "name": "m",
+    "type": "library",
+    "version": "unknown",
+    "compile_args": [],
+    "link_args": [
+      "-lm"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "math"
+    ]
+  },
+  {
+    "name": "rt",
+    "type": "library",
+    "version": "unknown",
+    "compile_args": [],
+    "link_args": [
+      "-lrt"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "rt"
+    ]
+  },
+  {
+    "name": "dep26568773339854329760474322932460155901",
+    "type": "internal",
+    "version": "0.18.2",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [
+      "/root/src/wlroots/include",
+      "/root/src/wlroots/build/include"
+    ],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [
+      "wayland-server",
+      "libdrm",
+      "xkbcommon",
+      "pixman-1",
+      "m",
+      "rt",
+      "pixman-1",
+      "libudev",
+      "libseat",
+      "libdisplay-info",
+      "libliftoff",
+      "libinput",
+      "wayland-client"
+    ],
+    "depends": [
+      "wlroots-0.18@sha"
+    ],
+    "meson_variables": [
+      "wlroots"
+    ]
+  }
+]

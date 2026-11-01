@@ -1,0 +1,51 @@
+!<thin>
+//                                              414       `
+core/hda_bus_type.o/
+core/bus.o/
+core/device.o/
+core/sysfs.o/
+core/regmap.o/
+core/controller.o/
+core/stream.o/
+core/array.o/
+core/hdmi_chmap.o/
+core/trace.o/
+core/component.o/
+core/i915.o/
+core/intel-dsp-config.o/
+core/intel-nhlt.o/
+core/intel-sdw-acpi.o/
+common/bind.o/
+common/codec.o/
+common/jack.o/
+common/auto_parser.o/
+common/sysfs.o/
+common/controller.o/
+common/proc.o/
+common/hwdep.o/
+controllers/intel.o/
+
+/0              0           0     0     644     5736      `
+/21             0           0     0     644     12104     `
+/33             0           0     0     644     29688     `
+/48             0           0     0     644     20256     `
+/62             0           0     0     644     13696     `
+/77             0           0     0     644     17168     `
+/96             0           0     0     644     22952     `
+/111            0           0     0     644     2768      `
+/125            0           0     0     644     21136     `
+/144            0           0     0     644     23136     `
+/158            0           0     0     644     11240     `
+/176            0           0     0     644     6240      `
+/189            0           0     0     644     7368      `
+/214            0           0     0     644     8760      `
+/233            0           0     0     644     7416      `
+/256            0           0     0     644     9912      `
+/271            0           0     0     644     99088     `
+/287            0           0     0     644     19320     `
+/302            0           0     0     644     21208     `
+/324            0           0     0     644     9344      `
+/340            0           0     0     644     49840     `
+/361            0           0     0     644     28072     `
+/376            0           0     0     644     3592      `
+/392            0           0     0     644     71168     `

@@ -1,0 +1,1 @@
+savedcmd_sound/hda/core/built-in.a := rm -f sound/hda/core/built-in.a;  printf "sound/hda/core/%s " hda_bus_type.o bus.o device.o sysfs.o regmap.o controller.o stream.o array.o hdmi_chmap.o trace.o component.o i915.o intel-dsp-config.o intel-nhlt.o intel-sdw-acpi.o | xargs ar cDPrST sound/hda/core/built-in.a

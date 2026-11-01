@@ -1,0 +1,1 @@
+savedcmd_sound/hda/modules.order := {   cat sound/hda/core/modules.order;   cat sound/hda/common/modules.order;   cat sound/hda/codecs/modules.order;   cat sound/hda/controllers/modules.order; :; } > sound/hda/modules.order
