@@ -1,5 +1,5 @@
 
-name: Assemble Linux Distro
+name: Extract Linux Distro into Main
 
 on:
   workflow_dispatch:
@@ -8,33 +8,71 @@ permissions:
   contents: write
 
 jobs:
-  assemble:
+  extract:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository and download LFS files
         uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
 
-      - name: Assemble parts
+      - name: Reassemble archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat linux-distro-part-aa linux-distro-part-ab > /tmp/linux-distro
+          ls -lh /tmp/linux-distro
+          file /tmp/linux-distro
+
+      - name: Extract archive
+        shell: bash
         run: |
           set -euo pipefail
 
-          cat linux-distro-part-aa linux-distro-part-ab > linux-distro
+          mkdir -p linux_distro_original
 
-          ls -lh linux-distro
-          sha256sum linux-distro
+          tar -tf /tmp/linux-distro > /tmp/archive-list.txt
+          tar -xf /tmp/linux-distro -C linux_distro_original
 
-      - name: Commit assembled file
+          echo "Extracted file count:"
+          find linux_distro_original -type f | wc -l
+
+          echo "Largest extracted files:"
+          find linux_distro_original -type f -printf '%s %p\n' \
+            | sort -nr | head -20
+
+      - name: Check GitHub limits
+        shell: bash
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          set -euo pipefail
 
-          git add linux-distro
+          oversized=$(find linux_distro_original -type f -size +100M -print)
+
+          if [ -n "$oversized" ]; then
+            echo "Cannot commit these files to ordinary Git:"
+            echo "$oversized"
+            exit 1
+          fi
+
+          du -sh linux_distro_original
+
+      - name: Commit extracted contents to main
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add linux_distro_original
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No extracted content changes."
             exit 0
           fi
 
-          git commit -m "Assemble Linux distro"
-          git push
+          git commit -m "Extract Linux distro into repository"
+          git push origin HEAD:main
