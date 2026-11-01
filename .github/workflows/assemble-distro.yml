@@ -1,5 +1,5 @@
 
-name: Extract Linux Distro into Main
+name: Move Linux Distro to Repository Root
 
 on:
   workflow_dispatch:
@@ -8,168 +8,41 @@ permissions:
   contents: write
 
 jobs:
-  extract:
+  relocate:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
         with:
-          lfs: true
-          fetch-depth: 1
           ref: main
+          fetch-depth: 1
 
-      - name: Reassemble ZIP
+      - name: Move distro directory to root
         shell: bash
         run: |
           set -euo pipefail
 
-          cat linux-distro-part-aa linux-distro-part-ab \
-            > /tmp/linux-distro.zip
+          SOURCE="linux-distro/linux_distro_original"
+          DESTINATION="linux_distro_original"
 
-          ls -lh /tmp/linux-distro.zip
-          sha256sum /tmp/linux-distro.zip
+          if [ ! -d "$SOURCE" ]; then
+            echo "Source directory not found!"
+            exit 1
+          fi
 
-      - name: Validate ZIP and inspect files
-        shell: bash
-        run: |
-          set -euo pipefail
+          if [ -e "$DESTINATION" ]; then
+            echo "Destination already exists. Stopping safely."
+            exit 1
+          fi
 
-          python3 - <<'PY'
-          import zipfile
-          import sys
+          mv "$SOURCE" "$DESTINATION"
+          rmdir linux-distro
 
-          archive = "/tmp/linux-distro.zip"
-          limit = 100_000_000
-          total = 0
-          files = 0
-          oversized = []
-          unsafe = []
+          echo "Directory relocated successfully."
+          ls -la
 
-          with zipfile.ZipFile(archive) as z:
-              for item in z.infolist():
-                  name = item.filename.replace("\\", "/")
-                  parts = name.split("/")
-
-                  if name.startswith("/") or ".." in parts:
-                      unsafe.append(name)
-                      continue
-
-                  if item.is_dir():
-                      continue
-
-                  files += 1
-                  total += item.file_size
-
-                  if item.file_size > limit:
-                      oversized.append(
-                          (item.file_size, name)
-                      )
-
-          print(f"Files: {files}")
-          print(f"Uncompressed: {total / 1024**3:.2f} GiB")
-
-          if unsafe:
-              print("Unsafe ZIP paths:")
-              print("\n".join(unsafe[:30]))
-              sys.exit(1)
-
-          if oversized:
-              print("Files exceeding 100 MB:")
-              for size, name in oversized:
-                  print(f"{size / 1024**2:.1f} MiB: {name}")
-              sys.exit(1)
-
-          print("ZIP validation passed.")
-          PY
-
-      - name: Extract ZIP
-        run: |
-          set -euo pipefail
-
-          rm -rf linux-distro
-          mkdir -p linux-distro
-
-          unzip -oq /tmp/linux-distro.zip -d linux-distro
-
-          echo "Extracted size:"
-          du -sh linux-distro
-
-          echo "File count:"
-          find linux-distro -type f | wc -l
-
-      - name: Prepare Git batches
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          mkdir -p /tmp/git-batches
-
-          python3 - <<'PY'
-          import os
-          from pathlib import Path
-
-          root = Path("linux-distro")
-          max_file = 100_000_000
-          batch_limit = 900 * 1024**2
-
-          files = []
-          oversized = []
-
-          for p in sorted(root.rglob("*")):
-              if not (p.is_file() or p.is_symlink()):
-                  continue
-
-              size = p.lstat().st_size
-
-              if size > max_file:
-                  oversized.append((size, p))
-              else:
-                  files.append((p.as_posix(), size))
-
-          if oversized:
-              print("Oversized files:")
-              for size, path in oversized:
-                  print(f"{size / 1024**2:.1f} MiB: {path}")
-              raise SystemExit(1)
-
-          batches = []
-          current = []
-          current_size = 0
-
-          for path, size in files:
-              if current and current_size + size > batch_limit:
-                  batches.append(current)
-                  current = []
-                  current_size = 0
-
-              current.append(path)
-              current_size += size
-
-          if current:
-              batches.append(current)
-
-          if not batches:
-              raise SystemExit("No files found.")
-
-          for i, batch in enumerate(batches, 1):
-              out = Path(f"/tmp/git-batches/batch-{i:04}.nul")
-
-              with out.open("wb") as f:
-                  for path in batch:
-                      f.write(os.fsencode(path) + b"\0")
-
-              size = sum(os.lstat(p).st_size for p in batch)
-
-              print(
-                  f"Batch {i}: {len(batch)} files, "
-                  f"{size / 1024**2:.1f} MiB"
-              )
-
-          print(f"Total batches: {len(batches)}")
-          PY
-
-      - name: Commit and push extracted files in batches
+      - name: Commit relocation
         shell: bash
         run: |
           set -euo pipefail
@@ -178,27 +51,10 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
-          batches=(/tmp/git-batches/*.nul)
-          total=${#batches[@]}
+          git add -f -A -- linux-distro linux_distro_original
 
-          for i in "${!batches[@]}"; do
-            batch="${batches[$i]}"
-            number=$((i + 1))
+          git diff --cached --stat
 
-            echo "Processing batch $number/$total"
+          git commit -m "Move Linux distro to repository root"
 
-            git add -f \
-          --pathspec-from-file="$batch" \
-          --pathspec-file-nul
-
-            if git diff --cached --quiet; then
-              echo "Batch already committed."
-              continue
-            fi
-
-            git commit -m "Add Linux distro files (batch $number/$total)"
-
-            git push origin HEAD:main
-          done
-
-          echo "All extracted files pushed to main."
+          git push origin HEAD:main
