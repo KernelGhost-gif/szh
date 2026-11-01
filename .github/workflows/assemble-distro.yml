@@ -1,32 +1,119 @@
-name: Assemble Linux Distro
+
+name: Extract Linux Distro into Main
 
 on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  assemble:
+  extract:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository and download LFS
         uses: actions/checkout@v4
         with:
           lfs: true
+          fetch-depth: 1
 
-      - name: Assemble archive
+      - name: Reassemble ZIP
+        shell: bash
         run: |
           set -euo pipefail
-          cat linux-distro-part-aa linux-distro-part-ab > linux-distro
-          ls -lh linux-distro
-          sha256sum linux-distro
 
-      - name: Upload assembled archive
-        uses: actions/upload-artifact@v4
-        with:
-          name: assembled-linux-distro
-          path: linux-distro
-          if-no-files-found: error
-          retention-days: 7
+          cat linux-distro-part-aa linux-distro-part-ab \
+            > /tmp/linux-distro.zip
+
+          ls -lh /tmp/linux-distro.zip
+
+      - name: Verify ZIP archive
+        run: |
+          set -euo pipefail
+          unzip -tq /tmp/linux-distro.zip
+          echo "ZIP archive verified successfully."
+
+      - name: Check extracted file sizes
+        run: |
+          python3 - <<'PY'
+          import zipfile
+          import re
+          import sys
+
+          archive = "/tmp/linux-distro.zip"
+          total = 0
+          oversized = []
+          unsafe = []
+
+          with zipfile.ZipFile(archive) as z:
+              for item in z.infolist():
+                  name = item.filename.replace("\\", "/")
+                  parts = name.split("/")
+
+                  if (name.startswith("/") or
+                      re.match(r"^[A-Za-z]:", name) or
+                      ".." in parts):
+                      unsafe.append(name)
+
+                  if not item.is_dir():
+                      total += item.file_size
+
+                      if item.file_size > 100 * 1024**2:
+                          oversized.append(
+                              (item.file_size, name)
+                          )
+
+          print(f"Uncompressed size: {total / 1024**3:.2f} GiB")
+
+          if unsafe:
+              print("Unsafe ZIP paths detected:")
+              print("\n".join(unsafe[:30]))
+              sys.exit(1)
+
+          if oversized:
+              print("Files exceeding GitHub's 100 MiB limit:")
+              for size, name in oversized:
+                  print(f"{size / 1024**2:.1f} MiB: {name}")
+              sys.exit(1)
+
+          if total > 1536 * 1024**2:
+              print("Extraction exceeds the 1.5 GiB safety limit.")
+              sys.exit(1)
+
+          print("File-size checks passed.")
+          PY
+
+      - name: Extract ZIP
+        run: |
+          set -euo pipefail
+
+          rm -rf linux-distro
+          mkdir -p linux-distro
+
+          unzip -oq /tmp/linux-distro.zip -d linux-distro
+
+          echo "Extraction completed."
+          du -sh linux-distro
+          find linux-distro -type f | wc -l
+
+      - name: Commit extracted files to main
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add linux-distro/
+
+          if git diff --cached --quiet; then
+            echo "No new extracted files."
+            exit 0
+          fi
+
+          git diff --cached --stat
+
+          git commit -m "Extract Linux distro into main"
+
+          git push origin HEAD:main
