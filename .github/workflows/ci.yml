@@ -36,6 +36,7 @@ jobs:
       - name: Check shell syntax
         run: |
           bash -n scripts/*.sh
+          python3 -m py_compile scripts/qemu-smoke-test.py
           sh -n linux_distro_original/distro/fs/etc/init.d/rcS
 
       - name: Validate kernel and root filesystem
@@ -49,7 +50,7 @@ jobs:
           gzip -t build/initramfs.cpio.gz
           sha256sum -c build/SHA256SUMS
 
-      - name: Boot under QEMU
+      - name: Boot under QEMU and test the init shell
         run: ./scripts/qemu-smoke-test.sh
 
       - name: Publish boot assets for manual runs
