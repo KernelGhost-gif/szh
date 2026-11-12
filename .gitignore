@@ -1,0 +1,54 @@
+# Local build products
+/build/
+/out/
+*.cpio
+*.cpio.gz
+*.img
+*.qcow2
+*.iso
+qemu.log
+
+# Editor and host-generated files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Kernel build outputs (new/untracked files only)
+/linux_distro_original/src/linux/*.o
+/linux_distro_original/src/linux/*.a
+/linux_distro_original/src/linux/*.ko
+/linux_distro_original/src/linux/*.mod
+/linux_distro_original/src/linux/*.mod.c
+/linux_distro_original/src/linux/.*.cmd
+/linux_distro_original/src/linux/Module.symvers
+/linux_distro_original/src/linux/modules.order
+/linux_distro_original/src/linux/System.map
+/linux_distro_original/src/linux/vmlinux
+/linux_distro_original/src/linux/vmlinux.*
+/linux_distro_original/src/linux/arch/*/boot/*.o
+/linux_distro_original/src/linux/arch/*/boot/*.cmd
+
+# Meson/Ninja output
+/linux_distro_original/src/wlroots/build/
+
+# Linux kernel generated build artifacts (retain source, .config and bzImage)
+/linux_distro_original/src/linux/**/*.o
+/linux_distro_original/src/linux/**/*.a
+/linux_distro_original/src/linux/**/*.ko
+/linux_distro_original/src/linux/**/*.mod
+/linux_distro_original/src/linux/**/*.mod.c
+/linux_distro_original/src/linux/**/.*.cmd
+/linux_distro_original/src/linux/**/.tmp_*
+/linux_distro_original/src/linux/**/built-in.a
+/linux_distro_original/src/linux/**/modules.order
+/linux_distro_original/src/linux/**/modules.builtin*
+/linux_distro_original/src/linux/**/Module.symvers
+/linux_distro_original/src/linux/**/System.map
+/linux_distro_original/src/linux/**/vmlinux
+/linux_distro_original/src/linux/**/vmlinux.*
+!/linux_distro_original/src/linux/arch/x86/boot/bzImage
+
+# Never commit local editor state or Meson build products
+/linux_distro_original/src/wlroots/.README.md.swp
+/linux_distro_original/src/wlroots/build/

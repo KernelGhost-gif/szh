@@ -1,107 +1,83 @@
-# Toybox Linux Shell
+# SZH — Toybox Linux
 
-A minimal Linux environment built around the Toybox command-line utilities, a custom Linux kernel, and a lightweight userspace.
+SZH is an experimental x86-64 Linux userspace assembled around Toybox, musl, and a small Wayland stack. The repository includes a prebuilt Linux kernel, a staged root filesystem, and the wlroots/tinywl sources and binaries.
 
-## Overview
+This project is an operating-system experiment, not a production distribution. The automated boot test targets QEMU's x86-64 PC machine.
 
-Toybox Linux is a custom Linux distribution project focused on building a functional, lightweight operating system from the ground up.
+## What is included
 
-The project combines a Linux kernel, Toybox utilities, a musl-based root filesystem, and a Wayland-based graphical environment. The goal is to provide a minimal but usable Linux system with a command-line interface and the foundations for a graphical desktop.
+- **Kernel:** Linux 6.18.37 x86-64 configuration and a prebuilt `bzImage` at `linux_distro_original/src/linux/arch/x86/boot/bzImage`.
+- **Root filesystem:** `linux_distro_original/distro/fs`, including Toybox applets, a musl loader, libraries, and init configuration.
+- **Init:** Toybox init is staged at `/init` and `/sbin/init`. The inittab runs `/etc/init.d/rcS` and respawns `/bin/sh`.
+- **Graphical stack:** wlroots 0.18 and tinywl sources, with runtime libraries staged in `/usr/lib`.
+- **Build helpers:** scripts to normalize executable permissions, validate boot inputs, and package the root filesystem as a compressed newc initramfs.
 
-This is a real operating-system development project, not a terminal simulator.
+## Build and boot
 
-## Features and Components
+On Ubuntu or Debian, install the host tools:
 
-- **Linux Kernel:** Linux 6.18 series.
-- **Toybox:** Lightweight implementations of common Unix and Linux command-line utilities.
-- **musl Userspace:** A minimal root filesystem using musl libc.
-- **Init System:** Startup configuration using `inittab` and `rcS`.
-- **Shell:** `/bin/sh` as the initial command-line interface.
-- **Wayland:** A foundation for graphical sessions.
-- **wlroots:** A library for building Wayland compositors.
-- **tinywl:** A minimal Wayland compositor.
-- **QEMU:** Intended for virtual-machine testing and development.
-
-## Project Structure
-
-The project contains components for building and assembling a minimal Linux system.
-
-```text
-linux_distro_original/
-├── Linux kernel
-├── Toybox utilities
-├── Root filesystem
-├── Startup configuration
-│   ├── inittab
-│   └── rcS
-├── Wayland and wlroots components
-├── tinywl compositor
-└── Additional development files
+```sh
+sudo apt-get update
+sudo apt-get install -y cpio gzip qemu-system-x86 file binutils
 ```
 
-Note: This is a conceptual overview. Exact filenames and directory locations may differ in the current source tree.
+From the repository root:
 
-## How It Works
+```sh
+make validate
+make initramfs
+make test
+```
 
-The system is assembled from several layers:
+The build produces `build/initramfs.cpio.gz`. The kernel is the committed prebuilt `bzImage`; this workflow packages and tests the current kernel/rootfs pair and does not claim to rebuild the kernel from a pristine source checkout.
 
-1. The Linux kernel initializes the hardware and core system facilities.
-2. The root filesystem provides essential userspace files and libraries.
-3. The init configuration starts the initial shell and required system services.
-4. Toybox supplies lightweight command-line utilities.
-5. Wayland, wlroots, and tinywl provide the foundation for a graphical session.
+To start QEMU yourself:
 
-The components are assembled into a minimal Linux environment intended for development, experimentation, and further customization.
+```sh
+qemu-system-x86_64 \
+  -machine accel=tcg -m 512M \
+  -kernel linux_distro_original/src/linux/arch/x86/boot/bzImage \
+  -initrd build/initramfs.cpio.gz \
+  -append "console=ttyS0,115200 rdinit=/init" \
+  -display none -serial stdio -monitor none
+```
 
-## Toybox
+The init script prints `SZH_INITRAMFS_READY` after setting up runtime mount points. The smoke test connects to QEMU's serial console, waits for this marker, then runs `uname -m` in the respawned shell and requires the `x86_64` result.
 
-Toybox provides compact implementations of common command-line utilities in a single multicall executable.
+## Repository layout
 
-Depending on the applets included in the build, these utilities can support everyday tasks such as file management, text processing, directory navigation, and system inspection.
+```text
+.
+├── .github/workflows/ci.yml
+├── Makefile
+├── docs/booting.md
+├── scripts/
+│   ├── prepare-rootfs.sh
+│   ├── validate-distro.sh
+│   ├── build-initramfs.sh
+│   └── qemu-smoke-test.sh
+└── linux_distro_original/
+    ├── distro/fs/       # staged target root filesystem
+    └── src/
+        ├── linux/       # kernel source/build tree and .config
+        └── wlroots/     # wlroots and tinywl sources
+```
 
-Toybox applet availability depends on the configuration used to build it.
+Generated images and local build outputs belong in `build/` and are not committed. The old tracked `distro/init.cpio` was an empty archive; generate a real initramfs from `distro/fs` with the build script instead.
 
-## Building and Development
+## CI
 
-The project has been developed using Linux build tools and a Linux development environment.
+GitHub Actions validates required files and kernel settings, checks shell syntax, creates the initramfs, and boots it using QEMU's TCG mode. Run the workflow manually from the Actions tab to publish the kernel and initramfs as a short-lived artifact.
 
-The general workflow is:
+The workflow only reads repository contents. It does not push generated files or rewrite `main`.
 
-1. Obtain and configure the Linux kernel source.
-2. Build Toybox with the required applets.
-3. Prepare the root filesystem and copy the required binaries and libraries.
-4. Configure system startup through `inittab` and `rcS`.
-5. Include the required Wayland and compositor components.
-6. Assemble the system image or filesystem.
-7. Boot and test the environment, including through QEMU where configured.
+## Known limitations
 
-Exact build commands depend on the current source tree, toolchain, kernel configuration, and build scripts.
+- The checked-in kernel is a prebuilt x86-64 image. A clean, pinned, end-to-end kernel build pipeline is not yet provided.
+- The presence of wlroots/tinywl and their libraries does not mean a complete graphical session is configured or hardware-tested.
+- The default init configuration respawns a root shell. Do not expose this image to an untrusted network or use it as a secure multi-user system.
+- QEMU boot success is a smoke test, not proof of physical-device compatibility or support for Android/ARM hosts.
 
-## Current Development Goals
+## Licensing
 
-The project aims to provide a minimal, functional Linux environment with:
-
-- A working command-line shell.
-- Essential Unix utilities.
-- A correctly configured root filesystem.
-- Reliable system initialization.
-- A lightweight graphical environment.
-- Virtual-machine testing and iterative development.
-
-Additional desktop integration and usability improvements can be developed as the system evolves.
-
-## Philosophy
-
-The goal is to understand and build the operating-system stack rather than rely entirely on a preassembled desktop distribution.
-
-The project emphasizes lightweight components, direct control over the system, and learning through hands-on Linux development.
-
-## Disclaimer
-
-This project is under development. Features, configurations, and build procedures may change. Not every component described here is necessarily enabled or fully functional in every build.
-
-## License
-
-szh combines multiple upstream projects. Each component retains its own licensing terms. Refer to the relevant upstream source repositories and included license files for details.
-
-The project itself uses the GNU license.
+SZH bundles components with their own upstream licenses. See the included license files and upstream project notices before redistributing a combined image.

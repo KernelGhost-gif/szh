@@ -1,5 +1,19 @@
 #!/bin/sh
 
-mount -t sysfs /sys /sys 
-mount -t proc /proc /proc
-mount -t devtmpfs /dev /dev
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+export PATH
+umask 022
+
+# Mount points are not tracked as empty directories in Git.
+mkdir -p /dev /proc /sys /run /tmp
+
+# The kernel may have mounted devtmpfs automatically; tolerate EBUSY.
+mount -t devtmpfs devtmpfs /dev 2>/dev/null || :
+mkdir -p /dev/pts
+mount -t proc proc /proc 2>/dev/null || :
+mount -t sysfs sysfs /sys 2>/dev/null || :
+mount -t devpts devpts /dev/pts 2>/dev/null || :
+mount -t tmpfs -o mode=0755,nosuid,nodev tmpfs /run 2>/dev/null || :
+mount -t tmpfs -o mode=1777,nosuid,nodev tmpfs /tmp 2>/dev/null || :
+
+echo "SZH_INITRAMFS_READY"
