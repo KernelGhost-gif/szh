@@ -24,9 +24,9 @@ sudo apt-get install -y cpio gzip qemu-system-x86 file binutils
 From the repository root:
 
 ```sh
-./scripts/validate-distro.sh
-./scripts/build-initramfs.sh
-./scripts/qemu-smoke-test.sh
+make validate
+make initramfs
+make test
 ```
 
 The build produces `build/initramfs.cpio.gz`. The kernel is the committed prebuilt `bzImage`; this workflow packages and tests the current kernel/rootfs pair and does not claim to rebuild the kernel from a pristine source checkout.
@@ -42,13 +42,14 @@ qemu-system-x86_64 \
   -display none -serial stdio -monitor none
 ```
 
-The init script prints `SZH_INITRAMFS_READY` after setting up runtime mount points. The smoke test looks for this marker and stops QEMU after a bounded timeout.
+The init script prints `SZH_INITRAMFS_READY` after setting up runtime mount points. The smoke test connects to QEMU's serial console, waits for this marker, then runs `uname -m` in the respawned shell and requires the `x86_64` result.
 
 ## Repository layout
 
 ```text
 .
 ├── .github/workflows/ci.yml
+├── Makefile
 ├── docs/booting.md
 ├── scripts/
 │   ├── prepare-rootfs.sh
