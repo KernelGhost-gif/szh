@@ -32,12 +32,12 @@ Use `loglevel=7` to increase kernel logging. The serial console is important for
 ## Automated smoke test
 
 ```sh
-./scripts/validate-distro.sh
-./scripts/build-initramfs.sh
-SZH_QEMU_TIMEOUT=45 ./scripts/qemu-smoke-test.sh
+make validate
+make initramfs
+SZH_QEMU_TIMEOUT=45 make test
 ```
 
-The smoke test is deliberately bounded. It succeeds only when the init script's readiness marker appears in QEMU's serial output; a kernel banner alone is insufficient.
+The smoke test is deliberately bounded. It first requires the init script's readiness marker, then sends `uname -m` over the emulated serial console and requires the shell to return `x86_64`. A kernel banner or init marker alone is insufficient.
 
 ## Troubleshooting
 
