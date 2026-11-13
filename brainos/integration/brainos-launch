@@ -16,6 +16,11 @@ if [ ! -x /opt/brainos/bin/brainos-session ] || [ ! -x /opt/brainos/bin/brainos-
     echo "SZH: BrainOS payload missing; falling back to Toybox CLI."
     exec /bin/sh
 fi
+if [ ! -r /proc/sys/user/max_user_namespaces ] ||
+   [ "$(cat /proc/sys/user/max_user_namespaces 2>/dev/null)" -le 0 ]; then
+    echo "SZH: user namespaces unavailable; refusing unsandboxed WebEngine and falling back to CLI."
+    exec /bin/sh
+fi
 mkdir -p /run/user/1000 /dev/pts /dev/shm
 chown 1000:1000 /run/user/1000 2>/dev/null || true
 chmod 0700 /run/user/1000 2>/dev/null || true

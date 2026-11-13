@@ -8,6 +8,7 @@ on:
       - "brainos/integration/**"
       - "brainos/source-kit.lock"
       - ".github/workflows/brainos-integration-validation.yml"
+      - "linux_distro_original/src/linux/.config"
   workflow_dispatch:
 jobs:
   deterministic-initramfs:
@@ -32,3 +33,74 @@ jobs:
           chmod 0755 "$RUNNER_TEMP/rootfs/bin/test"
           ln -s /bin/test "$RUNNER_TEMP/rootfs/bin/test-link"
           bash brainos/integration/test-initramfs-reproducible.sh "$RUNNER_TEMP/rootfs" brainos/integration/pack_initramfs.py
+
+  kernel-cli-qemu:
+    needs: deterministic-initramfs
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install kernel and QEMU build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bc bison build-essential flex libelf-dev libncurses-dev libssl-dev dwarves qemu-system-x86
+      - name: Reconcile USER_NS and build bzImage
+        run: |
+          KERNEL=linux_distro_original/src/linux
+          test -f "$KERNEL/.config"
+          chmod +x "$KERNEL/scripts/config"
+          bash brainos/integration/configure-kernel-userns.sh "$KERNEL" 2
+          grep -qx 'CONFIG_USER_NS=y' "$KERNEL/.config"
+          grep -qx 'CONFIG_NAMESPACES=y' "$KERNEL/.config"
+      - name: Stage CLI boot initramfs without touching tracked rootfs
+        run: |
+          set -euo pipefail
+          ROOTFS="$RUNNER_TEMP/rootfs"
+          cp -a linux_distro_original/distro/fs "$ROOTFS"
+          install -D -m 0755 brainos/integration/brainos-launch "$ROOTFS/sbin/brainos-launch"
+          test -e "$ROOTFS/bin/toybox"
+          test -e "$ROOTFS/bin/sh"
+          test -e "$ROOTFS/bin/su"
+          test -e "$ROOTFS/bin/id"
+          readelf -l "$ROOTFS/bin/toybox" | grep -F '/lib/ld-musl-x86_64.so.1'
+          test -e "$ROOTFS/lib/ld-musl-x86_64.so.1"
+          sed -i 's#^::respawn:/bin/sh$#::respawn:/sbin/brainos-launch#' "$ROOTFS/etc/inittab"
+          grep -qx '::respawn:/sbin/brainos-launch' "$ROOTFS/etc/inittab"
+          cat >> "$ROOTFS/etc/init.d/rcS" <<'EOF'
+          mkdir -p /dev/pts /dev/shm /run
+          mount -t devpts devpts /dev/pts 2>/dev/null || true
+          mount -t tmpfs -o mode=1777 tmpfs /dev/shm 2>/dev/null || true
+          mount -t tmpfs -o mode=0755 tmpfs /run 2>/dev/null || true
+          EOF
+          SOURCE_DATE_EPOCH=0 python3 brainos/integration/pack_initramfs.py "$ROOTFS" "$RUNNER_TEMP/brainos-cli-initramfs.cpio.gz"
+      - name: Boot kernel in QEMU and exercise Toybox CLI
+        shell: bash
+        run: |
+          set -euo pipefail
+          LOG="$RUNNER_TEMP/brainos-cli-qemu.log"
+          set +e
+          timeout 35s qemu-system-x86_64 \
+            -machine q35,accel=tcg -cpu max -m 2048 -smp 2 \
+            -kernel linux_distro_original/src/linux/arch/x86/boot/bzImage \
+            -initrd "$RUNNER_TEMP/brainos-cli-initramfs.cpio.gz" \
+            -append 'console=ttyS0 loglevel=4 rdinit=/sbin/init brainos.mode=cli panic=-1' \
+            -display none -monitor none -serial stdio -no-reboot \
+            < <(sleep 12; printf 'echo SZH_CLI_INPUT_OK\nid\nsu -c id root\n') 2>&1 | tee "$LOG"
+          rc=${PIPESTATUS[0]}
+          set -e
+          [[ "$rc" == 0 || "$rc" == 124 ]] || exit "$rc"
+          grep -q 'SZH: Toybox CLI mode selected' "$LOG"
+          grep -q 'SZH_CLI_INPUT_OK' "$LOG"
+          grep -q 'uid=0' "$LOG"
+      - name: Upload kernel and CLI boot logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brainos-kernel-cli-qemu
+          path: |
+            linux_distro_original/src/linux/arch/x86/boot/bzImage
+            linux_distro_original/src/linux/.config
+            ${{ runner.temp }}/brainos-cli-initramfs.cpio.gz
+            ${{ runner.temp }}/brainos-cli-qemu.log
+          if-no-files-found: warn
+          retention-days: 7
