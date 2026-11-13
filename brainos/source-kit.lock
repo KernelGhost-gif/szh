@@ -1,0 +1,8 @@
+{
+  "archive": "BrainOS-Toybox-Integration-Kit(1).zip",
+  "archive_sha256": "591a1002ca6424cce9f719ff3eed25e931c5e969f8a24748968ac8b3254d0a6b",
+  "prebuilt_path": "kit/prebuilt/brainos-desktop",
+  "prebuilt_sha256": "a981a64021de4a924002884ee339f9c82308003fe92321b1260bbaca6d8f1356",
+  "prebuilt_bytes": 10336056,
+  "status": "source package audited; matching Qt/glibc runtime bundle is not included"
+}

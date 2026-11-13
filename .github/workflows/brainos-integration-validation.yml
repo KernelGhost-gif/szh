@@ -1,0 +1,34 @@
+name: BrainOS integration validation
+on:
+  push:
+    branches: [feat/brainos-desktop-integration]
+  pull_request:
+    branches: [main]
+    paths:
+      - "brainos/integration/**"
+      - "brainos/source-kit.lock"
+      - ".github/workflows/brainos-integration-validation.yml"
+  workflow_dispatch:
+jobs:
+  deterministic-initramfs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate helper syntax
+        run: |
+          python3 -m py_compile brainos/integration/pack_initramfs.py
+          bash -n brainos/integration/brainos-launch
+          bash -n brainos/integration/brainos-session
+          bash -n brainos/integration/test-initramfs-reproducible.sh
+          bash -n brainos/integration/configure-kernel-userns.sh
+      - name: Prove timestamp-invariant archive
+        run: |
+          mkdir -p "$RUNNER_TEMP/rootfs/etc" "$RUNNER_TEMP/rootfs/bin" "$RUNNER_TEMP/rootfs/dev"
+          printf 'szh test\n' > "$RUNNER_TEMP/rootfs/etc/motd"
+          printf '#!/bin/sh\nexit 0\n' > "$RUNNER_TEMP/rootfs/bin/test"
+          chmod 0755 "$RUNNER_TEMP/rootfs/bin/test"
+          ln -s /bin/test "$RUNNER_TEMP/rootfs/bin/test-link"
+          bash brainos/integration/test-initramfs-reproducible.sh "$RUNNER_TEMP/rootfs" brainos/integration/pack_initramfs.py
