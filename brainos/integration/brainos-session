@@ -1,0 +1,28 @@
+#!/bin/sh
+set -eu
+ROOT=/opt/brainos/runtime
+LIB="$ROOT/lib/x86_64-linux-gnu:$ROOT/usr/lib/x86_64-linux-gnu:$ROOT/usr/lib"
+export PATH="/sbin:/bin:/usr/sbin:/usr/bin"
+export HOME="${HOME:-/home/brainos}" USER="${USER:-brainos}" LOGNAME="${LOGNAME:-brainos}"
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS:-unix:path=$XDG_RUNTIME_DIR/bus}"
+export LD_LIBRARY_PATH="$LIB${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export QT_PLUGIN_PATH="$ROOT/usr/lib/x86_64-linux-gnu/qt6/plugins"
+export QT_QPA_PLATFORM_PLUGIN_PATH="$QT_PLUGIN_PATH/platforms"
+export QML2_IMPORT_PATH="$ROOT/usr/lib/x86_64-linux-gnu/qt6/qml"
+export QML_IMPORT_PATH="$QML2_IMPORT_PATH"
+export QT_QPA_PLATFORM="${QT_QPA_PLATFORM:-eglfs}"
+export QTWEBENGINEPROCESS_PATH="$ROOT/usr/lib/qt6/libexec/QtWebEngineProcess"
+export QTWEBENGINE_RESOURCES_PATH="$ROOT/usr/share/qt6/resources"
+export QTWEBENGINE_LOCALES_PATH="$QTWEBENGINE_RESOURCES_PATH/qtwebengine_locales"
+export FONTCONFIG_FILE="$ROOT/etc/fonts/fonts.conf"
+export LIBGL_ALWAYS_SOFTWARE=1
+mkdir -p "$XDG_RUNTIME_DIR" "$HOME/.cache" "$HOME/.config"
+chmod 0700 "$XDG_RUNTIME_DIR"
+[ "$(id -u)" -ne 0 ] || { echo "Refusing to run QtWebEngine as root." >&2; exit 77; }
+[ -x "$QTWEBENGINEPROCESS_PATH" ] || { echo "Missing QtWebEngineProcess: $QTWEBENGINEPROCESS_PATH" >&2; exit 78; }
+[ -f "$QTWEBENGINE_RESOURCES_PATH/qtwebengine_resources.pak" ] || { echo "Missing QtWebEngine .pak resources." >&2; exit 79; }
+if command -v unshare >/dev/null 2>&1; then
+    unshare -Ur true || { echo "Unprivileged user namespaces failed; refusing unsandboxed WebEngine." >&2; exit 80; }
+fi
+exec /opt/brainos/bin/brainos-desktop "$@"

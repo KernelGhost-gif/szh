@@ -1,0 +1,38 @@
+#!/bin/sh
+# Init respawn entry: preserve Toybox CLI and fall back on all desktop failures.
+set -u
+mode=desktop
+for arg in $(cat /proc/cmdline 2>/dev/null); do
+    case "$arg" in
+        brainos.mode=cli) mode=cli ;;
+        brainos.mode=desktop) mode=desktop ;;
+    esac
+done
+if [ "$mode" = cli ]; then
+    echo "SZH: Toybox CLI mode selected."
+    exec /bin/sh
+fi
+if [ ! -x /opt/brainos/bin/brainos-session ] || [ ! -x /opt/brainos/bin/brainos-desktop ]; then
+    echo "SZH: BrainOS payload missing; falling back to Toybox CLI."
+    exec /bin/sh
+fi
+if [ ! -r /proc/sys/user/max_user_namespaces ] ||
+   [ "$(cat /proc/sys/user/max_user_namespaces 2>/dev/null)" -le 0 ]; then
+    echo "SZH: user namespaces unavailable; refusing unsandboxed WebEngine and falling back to CLI."
+    exec /bin/sh
+fi
+mkdir -p /run/user/1000 /dev/pts /dev/shm
+chown 1000:1000 /run/user/1000 2>/dev/null || true
+chmod 0700 /run/user/1000 2>/dev/null || true
+if ! grep -q '^brainos:' /etc/passwd || ! command -v su >/dev/null 2>&1; then
+    echo "SZH: BrainOS account or Toybox su missing; falling back to CLI."
+    exec /bin/sh
+fi
+# Do not disable Chromium's sandbox or run QtWebEngine as root.
+if su -s /bin/sh -c 'exec /opt/brainos/bin/brainos-session' brainos; then
+    echo "SZH: BrainOS session exited; returning to Toybox CLI."
+else
+    rc=$?
+    echo "SZH: BrainOS failed (status=$rc); falling back to Toybox CLI."
+fi
+exec /bin/sh
